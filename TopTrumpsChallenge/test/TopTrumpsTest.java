@@ -3,6 +3,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class TopTrumpsTest {
+	Cars car1 = null;
+	Cars car2 = null;
 
 	Audi A3 = new Audi("Audi", "A3", 2f, 130, 140, 6.6f, 24375);
 	Audi A4 = new Audi("Audi", "A4", 3f, 141, 150, 5.2f, 29505);
@@ -25,6 +27,17 @@ class TopTrumpsTest {
 	void test3() {
 		assert(Series7.acceleration > Series8.acceleration);
 	}
+	
+	@Test
+	void test4() {
+		Cars car1 = new Audi ("Audi", "A4", 3f, 141, 150, 5.2f, 29505);
+		Cars car2 = new Audi ("Audi", "A3", 2f, 130, 140, 6.6f, 24375);
+		car1.topSpeed(car2);
+		assert(car2.getTopSpeed()== 120);
+		
+	}
+
+
 	
 	
 

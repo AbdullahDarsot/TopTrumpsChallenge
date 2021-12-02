@@ -5,6 +5,7 @@ public class TopTrumpsChallenge {
 			Cars car1 = null;
 			Cars car2 = null;
 			
+			
 			Audi A3 = new Audi("Audi", "A3", 2f, 130, 140, 6.6f, 24375);
 			Audi A4 = new Audi("Audi", "A4", 3f, 141, 150, 5.2f, 29505);
 			BMW Series7 = new BMW("BMW", "7 Series", 3f, 155, 390, 5.7f, 69510);
@@ -72,7 +73,7 @@ public class TopTrumpsChallenge {
 			if (category.equals("acceleration")) {
 				A3.accelaration(car1, car2);
 				} else if (category.equals("top speed")) {
-				A3.topSpeed(car1, car2);
+				A3.topSpeed(car2);
 				} else if (category.equals("engine size")) {
 				A3.engineSize(car1, car2);
 				} else if (category.equals("price")) {

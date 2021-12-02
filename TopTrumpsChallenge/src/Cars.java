@@ -83,20 +83,34 @@ public class Cars {
 
 	
 	// TopSpeed Test --------------------------------------------------------------------------------------------------------------
-	void topSpeed(Cars car1, Cars car2) {
-		if (car1.getTopSpeed() > car2.getTopSpeed()) {
+//	void topSpeed(Cars car1, Cars car2) {
+//		if (car1.getTopSpeed() > car2.getTopSpeed()) {
+//			car2.topSpeed -=10;
+//			System.out.println("the car with highest top speed is " + car1.getModel());
+//		} else {
+//			car1.topSpeed -=10;
+//			System.out.println("the car with highest top speed is " + car2.getModel());
+//		}
+//		
+//		car1.getTopSpeed();
+//		car2.getTopSpeed();
+//		System.out.println(car1.getTopSpeed());
+//	}
+	
+	
+	void topSpeed(Cars car2) {
+		if (this.getTopSpeed() > car2.getTopSpeed()) {
 			car2.topSpeed -=10;
-			System.out.println("the car with highest top speed is " + car1.getModel());
+			System.out.println("the car with highest top speed is " + this.getModel());
 		} else {
-			car1.topSpeed -=10;
+			this.topSpeed -=10;
 			System.out.println("the car with highest top speed is " + car2.getModel());
 		}
 		
-		car1.getTopSpeed();
+		this.getTopSpeed();
 		car2.getTopSpeed();
-		System.out.println(car1.getTopSpeed());
+		System.out.println(this.getTopSpeed());
 	}
-	
 	
 	// acceleration Test --------------------------------------------------------------------------------------------------------------
 	void accelaration(Cars car1, Cars car2) {
