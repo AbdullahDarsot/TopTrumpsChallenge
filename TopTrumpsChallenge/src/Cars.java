@@ -41,7 +41,7 @@ public class Cars {
 		return acceleration;
 	}
 	
-	public float getTopSpeed() {
+	public int getTopSpeed() {
 		return topSpeed;
 	}
 	
@@ -69,19 +69,32 @@ public class Cars {
 	
 	void price(Cars car1, Cars car2) {
 		if (car1.getPrice() > car2.getPrice()) {
+			
 			System.out.println("the most expensive car is " + car1.getModel());
 		} else {
 			System.out.println("the Most Expensive car is " + car2.getModel());
+			
 		}
+		
+	car1.getPrice();
+	System.out.println(car2.price);
 	}
+	
+
 	
 	// TopSpeed Test --------------------------------------------------------------------------------------------------------------
 	void topSpeed(Cars car1, Cars car2) {
 		if (car1.getTopSpeed() > car2.getTopSpeed()) {
+			car2.topSpeed -=10;
 			System.out.println("the car with highest top speed is " + car1.getModel());
 		} else {
+			car1.topSpeed -=10;
 			System.out.println("the car with highest top speed is " + car2.getModel());
 		}
+		
+		car1.getTopSpeed();
+		car2.getTopSpeed();
+		System.out.println(car1.getTopSpeed());
 	}
 	
 	

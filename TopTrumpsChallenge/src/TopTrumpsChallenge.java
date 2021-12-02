@@ -5,6 +5,13 @@ public class TopTrumpsChallenge {
 			Cars car1 = null;
 			Cars car2 = null;
 			
+			Audi A3 = new Audi("Audi", "A3", 2f, 130, 140, 6.6f, 24375);
+			Audi A4 = new Audi("Audi", "A4", 3f, 141, 150, 5.2f, 29505);
+			BMW Series7 = new BMW("BMW", "7 Series", 3f, 155, 390, 5.7f, 69510);
+			BMW Series8 = new BMW("BMW", "8 Series", 4.4f, 155, 400, 3.8f, 69225);
+			Mercedes EClass = new Mercedes("Mercedes", "EClass", 2f, 156, 385, 5.6f, 69999);
+			Mercedes SClass = new Mercedes("Mercedes", "SClass", 3f, 159, 399, 3.9f, 71000);
+			
 			Scanner keyboardInput = new Scanner(System.in);
 			System.out.println("User 1, choose your car: ");
 			String user1Car = keyboardInput.nextLine();
@@ -21,12 +28,7 @@ public class TopTrumpsChallenge {
 			
 //			Audi Class --------------------------------------------------------------------------------------------------
 			
-			Audi A3 = new Audi("Audi", "A3", 2f, 130, 140, 6.6f, 24375);
-			Audi A4 = new Audi("Audi", "A4", 3f, 141, 150, 5.2f, 29505);
-			BMW Series7 = new BMW("BMW", "7 Series", 3f, 155, 390, 5.7f, 69510);
-			BMW Series8 = new BMW("BMW", "8 Series", 4.4f, 155, 400, 3.8f, 69225);
-			Mercedes EClass = new Mercedes("Mercedes", "EClass", 2f, 156, 385, 5.6f, 69999);
-			Mercedes SClass = new Mercedes("Mercedes", "SClass", 3f, 159, 399, 3.9f, 71000);
+			
 			
 			
 			if (user1Car.equals("A3")) {
